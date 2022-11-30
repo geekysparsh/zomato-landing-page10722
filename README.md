@@ -2,4 +2,4 @@
 
 ## simple responsive zomato landing page
 
-deployment link- sparsh0169/zomato-landing-page-10722
+Deployment link - https://sparsh0169.github.io/zomato-landing-page10722/
