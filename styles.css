@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  .hero_section {
+    background-image: url(./images/heroSectionBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 59vh;
+    color: white;
+  }
+  
+  .navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 190px;
+  }
+  
+  .navbar_menu_container {
+    display: flex;
+  
+    gap: 28px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar_menu_container .navbar_menu_item_user_icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+  
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .hero_content {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(59vh - 50px);
+  }
+  .hero_content_image {
+    width: 315px;
+  }
+  
+  .hero_content_heading {
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  .search_Box {
+    background: white;
+    width: 50%;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search_Location {
+    width: 30%;
+    border-right: 2px solid #777;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .search_Location i {
+    position: absolute;
+    font-size: 1.1rem;
+    color: rgb(255, 126, 139);
+  }
+  .search_Location input {
+    width: 100%;
+    padding-left: 22px;
+    font-size: 1.1rem;
+    border-style: none;
+    outline: none;
+  }
+  .search_Bar {
+    width: 70%;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .search_Bar i {
+    position: absolute;
+    font-size: 1.1rem;
+    color: rgb(130, 130, 130);
+  }
+  .search_Bar input {
+    width: 100%;
+    padding-left: 25px;
+  
+    font-size: 1.1rem;
+    border-style: none;
+    outline: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 3rem auto;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .services_card {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+  }
+  .services_card:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+  }
+  
+  .services_card_image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .services_card_content {
+    padding: 6px 23px;
+  }
+  .services_card_content h2 {
+    font-weight: 300;
+    font-size: 25px;
+  }
+  .services_card_content p {
+    font-weight: 300;
+    /* font-size: 12px; */
+  }
+  
+  /* Coolection section  */
+  
+  .collections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .collections_heading {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .collections_contents {
+    width: 80%;
+  }
+  .collections_content {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .collections_content span:nth-child(2) {
+    color: #ff7e8b;
+    cursor: pointer;
+  }
+  .collections_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+  }
+  
+  .collections_card {
+    border: 2px solid #e0e0e0;
+    height: 350px;
+    min-width: 270px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .collections_card1 {
+    background-image: url("images/collection1.jpg");
+  }
+  .collections_card2 {
+    background-image: url("images/collection2.jpg");
+  }
+  .collections_card3 {
+    background-image: url("images/collection3.jpg");
+  }
+  .collections_card4 {
+    background-image: url("images/collection4.jpg");
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0.05) 85%
+    );
+  }
+  .collections_card_content {
+    color: white;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .collections_card_content h1 {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+  }
+  
+  /* Popular Localities */
+  .popular_localities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  
+  .popular_localities_places {
+    display: flex;
+  
+    width: 84%;
+    gap: 1rem;
+    margin: 0px auto;
+    flex-wrap: wrap;
+  }
+  .popular_localities_place {
+    border: 1px solid #e0e0e0;
+    outline: 0.5px solid #e0e0e0;
+    flex: 30%;
+    width: 25%;
+    height: 80px;
+    border-radius: 10px;
+  }
+  .popular_localities_heading {
+    width: 84%;
+    margin: 20px auto;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .popular_localities_place h1 {
+    font-weight: 400;
+  }
+  .popular_localities_place p {
+    font-weight: 400;
+  }
+  
+  .popular_localities_place :hover {
+    cursor: pointer;
+  }
+  .popular_localities_place_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  .popular_localities_place_see_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-top: 12px;
+    font-weight: 400;
+    gap: 1rem;
+  }
+  
+  /* get_the_app section  */
+  
+  .get_the_app {
+    background-color: rgb(255, 251, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 6rem;
+  }
+  
+  .get_the_app_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .get_the_app .get_the_app_box .get_the_app_image_section {
+    flex: 2;
+  }
+  .get_the_app_image_section img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .get_the_app_container {
+    flex: 3;
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .get_the_app_container h1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .get_the_app_container p {
+    font-weight: 300;
+  }
+  
+  .get_the_app_choice {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .get_the_app_choice div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .get_the_app_choice div:hover {
+    cursor: pointer;
+  }
+  .get_the_app_choice input:hover {
+    cursor: pointer;
+  }
+  .get_the_app_choice label:hover {
+    cursor: pointer;
+  }
+  .get_the_app_choice div input {
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239, 79, 95);
+  }
+  
+  .get_the_app_inputs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .get_the_app_inputs input,
+  button {
+    padding: 10px 12px;
+  }
+  .get_the_app_inputs button {
+    border: none;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .get_the_app_inputs input {
+    flex: auto;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .get_the_app_choice p {
+    font-weight: 200;
+  }
+  
+  .download_images {
+    display: flex;
+    gap: 1rem;
+  }
+  .download_images img {
+    width: 35%;
+  }
+  
+  .explore_near_me {
+    width: 80%;
+  }
+  .explore_near_me h1 {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .explore_near_me_boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem auto;
+  }
+  .explore_near_me_box {
+    border: 1px solid #e0e0e0;
+    outline: none;
+    flex: 100%;
+    height: 4rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+  }
+  .explore_near_me_box :hover {
+    cursor: pointer;
+  }
+  
+  /* Footer styling */
+  
+  .footer {
+    width: 100%;
+  }
+  
+  .footer_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+  
+  .footer_section1 img {
+    width: 120px;
+  }
+  
+  .section1__buttonContainer {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .section1__buttonContainer button {
+    padding: 5px 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .navigation_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+  }
+  
+  .link__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .link__container h5 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+  }
+  
+  .footer__link {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  .footer__link:hover {
+    color: black;
+  }
+  
+  .social__links_container {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .social__links_container button {
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .social__links_container button i {
+    color: white;
+    font-size: 13px;
+  }
+  
+  .footer__section_logos {
+    width: 60%;
+  }
+  
+  .disclamer {
+    width: 90%;
+    margin: auto;
+    color: gray;
+    font-size: 12px;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+  }
